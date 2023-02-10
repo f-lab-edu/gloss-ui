@@ -1,24 +1,21 @@
 ---
 name: Feature Request
-about: Add new feature to this project
+about: Request new feature to this project
 title: ''
 labels: ''
-assignees: f-lab-kevin
+assignees: ''
 
 ---
 
 # AS-IS
-- How was it like without the feature you've developed?
+- What kind of inconvenience do you experience?
 - Is your feature request related to a problem? (e.g. I'm always frustrated when...)
 - Screenshots
 
 # TO-BE
 - A clear and concise description of what you want to happen.
-- Screenshots
 
 # Additional context
 - Describe alternatives you've considered
-A clear and concise description of any alternative solutions or features you've considered.
-- Known bugs
 - TODO
 - Questions
