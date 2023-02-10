@@ -1,15 +1,19 @@
+- What is the pull request about
+  - new feature
+  - bug
+  - docs
+
 # AS-IS
-- What was it like without the new feature you're adding?
-- Is your feature request related to a problem? Please describe.
+- What was it like before the pull request?
 - Screenshots
 
 # TO-BE
-- Describe the feature you've developed
+- Describe the pull request
 - Screenshots
 
 # Additional Context
-- Describe alternatives you've considered
 - Tests
 - Questions
 - TODO
 - References
+- Known issues
