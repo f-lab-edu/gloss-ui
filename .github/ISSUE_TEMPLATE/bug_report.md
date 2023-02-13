@@ -2,21 +2,22 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: bug
 assignees: ''
 
 ---
 
 # AS-IS
-- Describe the bug
-- How to reproduce the bug
-  - Steps to reproduce the bug
-  - Environment (e.g. OS, browser, etc.)
+- What's the bug you're facing?
+- How can we reproduce the bug from our side?
 - Screenshots
+- What's your environment like?
+	- What browser do you use(e.g. Chrome, Safari, etc.)?
+	- Do you have any special extensions installed?
 
 # TO-BE
-- Describe how you expected it to behave
-- Describe how you want it to behave
+- How do you expect it to work?
 
-# Additional context
+# Additional Context
 - Questions
+- References
