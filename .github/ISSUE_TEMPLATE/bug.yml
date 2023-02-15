@@ -1,0 +1,24 @@
+name: Bug
+description: File a bug/issue
+title: "[BUG] <title>"
+labels: bug
+body:
+- type: textarea
+  attributes:
+    label: What's the bug you're facing?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: How can we reproduce the bug from our side?
+     description: |
+      - steps to reproduce 
+      - environment (e.g. OS, browser, node version, etc.)
+      - any special extension installed?
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: How do you expect it to work?
+  validations:
+    required: true
