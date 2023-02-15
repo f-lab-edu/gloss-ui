@@ -11,7 +11,7 @@ body:
 - type: textarea
   attributes:
     label: How can we reproduce the bug from our side?
-     description: |
+     description:
       - steps to reproduce 
       - environment (e.g. OS, browser, node version, etc.)
       - any special extension installed?
