@@ -12,10 +12,10 @@ body:
   attributes:
     label: How can we reproduce the bug from our side?
     description: |
-    -steps to reproduce
-    -browser
-    -version
-    -etc.
+      "- steps to reproduce"
+      "- browser"
+      "- version"
+      "- etc."
   validations:
     required: true
 - type: textarea
