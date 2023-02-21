@@ -56,7 +56,7 @@ Adjust folder structure
   export { Button }
   ```
 
-- delete redundant files (e.g. App.tsx, index.html, etc.)
+- delete redundant files (e.g. App.tsx, etc.)
 
 
 ## Testing Local Version

@@ -2,11 +2,13 @@
   "name": "@gloss-ui/button",
   "version": "0.0.1-alpha.0",
   "type": "module",
-  "main": "./src/index.tsx",
+  "main": "dist/index.tsx",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepublish": "build"
   },
   "dependencies": {
     "react": "^18.2.0",
