@@ -14,30 +14,32 @@ Configure package.json to include at least:
   "name": "@gloss-ui/[PACKAGE_NAME]",
   "version": "0.0.0",
   "type": "module",
-  "main": "./src/index.tsx",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "types": "dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
-    "@vitejs/plugin-react": "^3.1.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0"
+    "prepublish": "tsc && vite build"
   }
 }
 
 ```
-- add `"main: ./src/index.tsx"`
 - prefix package name with `@gloss-ui/`
+- add `"main: ./src/index.tsx"`
 - remove `“private: true”`, if the package should be published as npm package
-
+- add `"main"` option
+- add `module"` option
+- add `exports"` option
+- set `"scripts.prepublish"` option to `"tsc && vite build"` to ensure build before publishing to npm registry
 Adjust folder structure
 ```
 │   ...
@@ -58,6 +60,28 @@ Adjust folder structure
 
 - delete redundant files (e.g. App.tsx, etc.)
 
+Configure vite.config.ts to include at least:
+```
+export default defineConfig({
+  plugins: [react(), dts()],
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'src/index.tsx'),
+      name: '@gloss-ui/button',
+      fileName: "index",
+      formats: ['es', 'umd']
+    },
+    rollupOptions: {
+      external: ['react'],
+      output: {
+        globals: {
+          react: 'react'
+        }
+      }
+    }
+  }
+})
+```
 
 ## Testing Local Version
 To link local version to other local project, go to the @gloss-ui component you like to consume and run:
