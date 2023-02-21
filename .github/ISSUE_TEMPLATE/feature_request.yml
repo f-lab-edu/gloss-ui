@@ -1,0 +1,19 @@
+name: Feature Request
+description: Request new feature to this project
+title: "[FEAT] <title>"
+body:
+- type: textarea
+  attributes:
+    label: What kind of inconvenience or problem do you experience?
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Tell us the feature you want added in the future
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Additional Context
+  validations:
+    required: false
