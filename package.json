@@ -1,0 +1,19 @@
+{
+  "name": "gloss-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/f-lab-edu/gloss-ui.git",
+  "author": "Minkyung Lee <gooogyeong@gmail.com>",
+  "license": "MIT",
+  "private": "true",
+  "publishConfig": {
+    "access": "public"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.5.1",
+    "vite-plugin-dts": "^2.0.0-beta.2"
+  }
+}
